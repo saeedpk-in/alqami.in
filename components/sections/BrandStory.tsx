@@ -17,7 +17,6 @@ export default function BrandStory() {
               className="object-cover rounded-3xl"
               priority
             />
-            {/* <div className="absolute inset-0 rounded-full bg-amber-100 opacity-20 -z-10 scale-90"></div> */}
           </div>
         </div>
         
@@ -26,11 +25,6 @@ export default function BrandStory() {
             <span className="inline-block px-3 py-1 text-xs font-semibold tracking-wider text-amber-800 uppercase bg-amber-100 rounded-full">
               Our Journey
             </span>
-
-            {/* <h2 className="text-3xl md:text-4xl font-light text-stone-800">
-              <span className="block font-serif italic">Rooted in</span>
-              <span className="block font-medium">Nature's Wisdom</span>
-            </h2> */}
             <h1 className="text-5xl md:text-6xl lg:text-7xl tracking-tighter text-left ">
               The <span className="font-black">BrandStory.</span>
             </h1>

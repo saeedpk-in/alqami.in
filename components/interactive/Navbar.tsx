@@ -78,7 +78,6 @@ const Navbar = () => {
                   className="rounded-full"
                   priority={true}
                 />
-                {/* <h1 className="text-2xl font-bold">Alqami</h1> */}
               </div>
             </Link>
 
@@ -177,15 +176,6 @@ const Navbar = () => {
                     About
                   </motion.div>
                 </Link>
-                {/* <Link href="/about#meet-founders">
-                  <motion.div
-                    whileTap={{ scale: 0.98 }}
-                    className="block px-3 py-2 text-base font-medium hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md transition-colors"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    Meet the founders
-                  </motion.div>
-                </Link> */}
 
                 <Link href="/#contact" >
                   <motion.div

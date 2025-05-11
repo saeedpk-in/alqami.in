@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import { TrendingUp } from "lucide-react"
-import { Label, Pie, PieChart, Sector } from "recharts"
-import { PieSectorDataItem } from "recharts/types/polar/Pie"
+import { TrendingUp } from "lucide-react";
+import { Label, Pie, PieChart, Sector } from "recharts";
+import { PieSectorDataItem } from "recharts/types/polar/Pie";
 
 import {
   Card,
@@ -11,13 +11,13 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"
+} from "@/components/ui/card";
 import {
   ChartConfig,
   ChartContainer,
   ChartTooltip,
   ChartTooltipContent,
-} from "@/components/ui/chart"
+} from "@/components/ui/chart";
 // const chartData = [
 //   { browser: "chrome", visitors: 275, fill: "var(--color-chrome)" },
 //   { browser: "safari", visitors: 200, fill: "var(--color-safari)" },
@@ -51,11 +51,23 @@ import {
 //   },
 // } satisfies ChartConfig
 const chartData = [
-  { ingredient: "Multani Mitti", percentage: 60, fill: "var(--color-multani_mitti)" },
-  { ingredient: "Sandalwood Powder", percentage: 10, fill: "var(--color-sandalwood_powder)" },
+  {
+    ingredient: "Multani Mitti",
+    percentage: 60,
+    fill: "var(--color-multani_mitti)",
+  },
+  {
+    ingredient: "Sandalwood Powder",
+    percentage: 10,
+    fill: "var(--color-sandalwood_powder)",
+  },
   { ingredient: "Turmeric", percentage: 10, fill: "var(--color-turmeric)" },
   { ingredient: "Rose Water", percentage: 15, fill: "var(--color-rose_water)" },
-  { ingredient: "Aloe Vera Extract", percentage: 5, fill: "var(--color-aloe_vera_extract)" },
+  {
+    ingredient: "Aloe Vera Extract",
+    percentage: 5,
+    fill: "var(--color-aloe_vera_extract)",
+  },
 ];
 
 const chartConfig = {
@@ -84,13 +96,14 @@ const chartConfig = {
   },
 } satisfies ChartConfig;
 
-
 export function CompositionChart() {
   return (
     <Card className="flex flex-col rounded-3xl border border-stone-200/50 h-full">
       <CardHeader className="items-center pb-0">
-        <CardTitle>Elemental Composition</CardTitle>
-        <CardDescription>January - June 2024</CardDescription>
+        <CardTitle>Suggested Composition</CardTitle>
+        <CardDescription>
+          keep this composition for better experience
+        </CardDescription>
       </CardHeader>
       <CardContent className="flex-1 pb-0 px-0 ">
         <ChartContainer
@@ -120,10 +133,11 @@ export function CompositionChart() {
         </ChartContainer>
       </CardContent>
       <CardFooter className="flex-col gap-2 text-sm">
-        <div className="flex items-center gap-2 font-medium leading-none">
-          Precision-crafted ratios for optimal efficacy
+        <div className="text-center font-medium  leading-none">
+          If you only have normal water, mix it with Multani Mitti to create a
+          smooth paste for optimal results.
         </div>
       </CardFooter>
     </Card>
-  )
+  );
 }

@@ -306,6 +306,5 @@ export default function ContactSection() {
         </div>
       </div>
     </section>
-    // <div className=""></div>
   );
 }
