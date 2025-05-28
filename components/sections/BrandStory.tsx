@@ -1,32 +1,49 @@
-
 import Image from "next/image";
+import { TextAnimate } from "../magicui/text-animate";
 
 export default function BrandStory() {
   return (
     <section className="relative overflow-hidden" id="brand-story">
-      
-    <div className="container mx-auto px-4 md:px-12 py-12 md:py-24 ">
-      <div className="flex flex-col-reverse md:flex-row-reverse items-center justify-between gap-8 md:gap-12">
-        {/* Product Image - Now above content on mobile */}
-        <div className="w-full md:w-1/2 flex justify-center relative mt-8 md:mt-0">
-          <div className=" w-full max-w-xl aspect-square">
-            <Image
-              src="/powder.png"
-              alt="Multani Mitti Natural Facepack"
-              fill
-              className="object-cover rounded-3xl"
-              priority
-            />
+      <div className="container mx-auto px-4 md:px-12 py-12 md:py-24 ">
+        <div className="flex flex-col-reverse md:flex-row-reverse items-center justify-between gap-8 md:gap-12">
+          {/* Product Image - Now above content on mobile */}
+          <div className="w-full md:w-1/2 flex justify-center relative mt-8 md:mt-0">
+            <div className=" w-full max-w-xl aspect-square">
+              <Image
+                src="/powder.png"
+                alt="Multani Mitti Natural Facepack"
+                fill
+                className="object-cover rounded-3xl"
+                priority
+              />
+            </div>
           </div>
-        </div>
-        
-        {/* Content */}
-        <div className="lg:w-1/2 space-y-6 z-10">
+
+          {/* Content */}
+          <div className="lg:w-1/2 space-y-6 z-10">
             <span className="inline-block px-3 py-1 text-xs font-semibold tracking-wider text-amber-800 uppercase bg-amber-100 rounded-full">
               Our Journey
             </span>
             <h1 className="text-5xl md:text-6xl lg:text-7xl tracking-tighter text-left ">
-              The <span className="font-black">BrandStory.</span>
+              <TextAnimate
+                animation="blurInUp"
+                by="word"
+                once
+                delay={0.1}
+                as={"span"}
+              >
+                The
+              </TextAnimate>{" "}
+              <TextAnimate
+                animation="blurInUp"
+                by="word"
+                once
+                delay={0.1}
+                className="font-black"
+                as={"span"}
+              >
+                BrandStory.
+              </TextAnimate>
             </h1>
 
             <div className="space-y-4 text-stone-600">
@@ -66,11 +83,11 @@ export default function BrandStory() {
               </div>
             </div>
           </div>
+        </div>
       </div>
-    </div>
-    
-    {/* Decorative elements */}
-    <div className="absolute bottom-0 left-0 w-full h-16 bg-[url('/textures/wave-divider.svg')] bg-repeat-x bg-bottom opacity-15"></div>
-  </section>
+
+      {/* Decorative elements */}
+      <div className="absolute bottom-0 left-0 w-full h-16 bg-[url('/textures/wave-divider.svg')] bg-repeat-x bg-bottom opacity-15"></div>
+    </section>
   );
 }

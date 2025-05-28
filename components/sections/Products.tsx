@@ -1,4 +1,3 @@
-
 // components/ProductBento.tsx
 import Image from "next/image";
 import Link from "next/link";
@@ -14,6 +13,7 @@ import {
 import { Input } from "../ui/input";
 import { CompositionChart } from "../interactive/CompositionChart";
 import WaitList from "../interactive/WaitList";
+import { TextAnimate } from "../magicui/text-animate";
 
 export default function ProductBento() {
   return (
@@ -21,7 +21,6 @@ export default function ProductBento() {
       className="relatve py-16 md:py-24 bg-stone-50 overflow-hidden"
       id="product"
     >
-
       <div className="container mx-auto px-4 md:px-8 max-w-6xl">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -29,16 +28,33 @@ export default function ProductBento() {
             Coming Soon
           </span>
           <h2 className="text-5xl md:text-6xl lg:text-7xl text-stone-800 tracking-tighter">
-            <span className=" lock">Multani Mitti</span>
-            <span className="font-black  block mt-2">
+            {/* <span className=" block"></span>
+            <span className="font-black  block mt-2">Essence Unleashed</span> */}
+            <TextAnimate
+              animation="blurInUp"
+              by="word"
+              once
+              as={"span"}
+              delay={0.1}
+            >
+              Multani Mitti
+            </TextAnimate>{" "}
+            <TextAnimate
+              delay={0.1}
+              animation="blurInUp"
+              by="word"
+              once
+              className="font-black block mt-2"
+              as={"span"}
+            >
               Essence Unleashed
-            </span>
+            </TextAnimate>
           </h2>
         </div>
 
         {/* Dynamic Bento Grid */}
         <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
-          {/* Hero Product Image - Top Left */} 
+          {/* Hero Product Image - Top Left */}
           <div className="md:col-span-3 aspect-[4/3] md:aspect-square relative rounded-3xl overflow-hidden bg-stone-100 border border-stone-200/50">
             <Image
               src="/multani-pack.png"
@@ -158,8 +174,6 @@ export default function ProductBento() {
           <div className="md:col-span-3 bg-white rounded-3xl border border-stone-200/50">
             <CompositionChart />
           </div>
-          
-          
 
           {/* Stats Panel - Top Right */}
           <div className="md:col-span-2 aspect-square relative rounded-3xl h-full overflow-hidden bg-stone-100 border border-stone-200/50">

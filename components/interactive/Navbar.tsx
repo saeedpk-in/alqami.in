@@ -73,9 +73,9 @@ const Navbar = () => {
                 <Image
                   src={"/alqami.png"}
                   alt="logo"
-                  width={50}
-                  height={50}
-                  className="rounded-full"
+                  width={100}
+                  height={100}
+                  className="rounded-xl w-14 h-14"
                   priority={true}
                 />
               </div>
