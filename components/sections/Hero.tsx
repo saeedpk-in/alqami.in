@@ -30,8 +30,8 @@ export default function HeroSection() {
               Pure & Natural
             </Badge>
 
-            <div className="text-5xl md:text-6xl lg:text-7xl  text-stone-800  leading-tight tracking-tight">
-              <TextAnimate animation="blurInUp" by="word" once as={"h1"}>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl  text-stone-800  leading-tight tracking-tight">
+              <TextAnimate animation="blurInUp" by="word" once as={"span"}>
                 Nature's Secret
               </TextAnimate>
               <TextAnimate
@@ -39,12 +39,12 @@ export default function HeroSection() {
                 by="word"
                 once
                 
-                className="block font-black mt-2"
-                as={"h1"}
+                className="block font-black"
+                as={"span"}
               >
                 Multani Mitti Facepack
               </TextAnimate>
-            </div>
+            </h1>
 
             <div className="max-w-lg">
               <TextAnimate

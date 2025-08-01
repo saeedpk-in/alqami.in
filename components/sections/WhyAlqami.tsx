@@ -74,7 +74,7 @@ export default function WhyAlqami() {
               {values.map((value, index) => (
                 <div
                   key={index}
-                  className="bg-white p-4 rounded-xl shadow-sm border border-stone-100"
+                  className="bg-white p-4 rounded-2xl shadow-sm border border-stone-100"
                 >
                   <div className="mb-3">{value.icon}</div>
                   <h3 className="font-bold text-stone-800">{value.title}</h3>

@@ -11,8 +11,8 @@ import {
   ChevronRight,
 } from "lucide-react";
 import { Input } from "../ui/input";
-import { CompositionChart } from "../interactive/CompositionChart";
-import WaitList from "../interactive/WaitList";
+import { CompositionChart } from "../intractive/CompositionChart";
+// import WaitList from "../interactive/WaitList";
 import { TextAnimate } from "../magicui/text-animate";
 
 export default function ProductBento() {
@@ -25,7 +25,7 @@ export default function ProductBento() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="inline-block px-3 py-1 text-xs font-medium tracking-wider text-emerald-800 uppercase bg-emerald-100/50 rounded-full mb-4">
-            Coming Soon
+            featured
           </span>
           <h2 className="text-5xl md:text-6xl lg:text-7xl text-stone-800 tracking-tighter">
             {/* <span className=" block"></span>
@@ -168,7 +168,15 @@ export default function ProductBento() {
 
           {/* Waiting List - Middle Right */}
           <div className="md:col-span-3 bg-white p-6 rounded-3xl border border-stone-200/50">
-            <WaitList />
+            <div className="flex flex-col justify-around h-full">
+              <h2 className="text-2xl md:text-4xl tracking-tighter">Multani Mitti</h2>
+              <p className="text-stone-600 mb-4">
+                Experience the purest form of Multani Mitti, crafted for tan removal ,deep cleansing, oil control, and radiant skin. Limited stock available—secure yours today!
+              </p>
+              <Button className="w-full bg-emerald-900/90 hover:bg-emerald-900/80 rounded-full py-6 text-sm text-emerald-50">
+                Order Now before it runs out
+              </Button>
+            </div>
           </div>
 
           <div className="md:col-span-3 bg-white rounded-3xl border border-stone-200/50">
@@ -176,9 +184,9 @@ export default function ProductBento() {
           </div>
 
           {/* Stats Panel - Top Right */}
-          <div className="md:col-span-2 aspect-square relative rounded-3xl h-full overflow-hidden bg-stone-100 border border-stone-200/50">
+          <div className="md:col-span-2 aspect-square relative rounded-3xl h-full overflow-hidden bg-stone-100 border border-stone-300">
             <Image
-              src="/multani-pack-2.png"
+              src="/multani-mitti-2.jpg"
               alt="Multani Mitti Facepack"
               fill
               className="object-cover"

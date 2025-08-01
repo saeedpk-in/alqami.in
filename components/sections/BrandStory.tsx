@@ -42,7 +42,7 @@ export default function BrandStory() {
                 className="font-black"
                 as={"span"}
               >
-                BrandStory.
+                Brand Story.
               </TextAnimate>
             </h1>
 
@@ -66,15 +66,15 @@ export default function BrandStory() {
 
             <div className="pt-4">
               <div className="flex flex-col sm:flex-row gap-6">
-                <div className="flex-1 border-t border-amber-200 pt-4 shadow-xl p-6 rounded-xl">
-                  <h3 className="font-extrabold text-stone-800">Our Mission</h3>
+                <div className="flex-1 border-t border-amber-200 pt-4 shadow-xl p-6 rounded-2xl">
+                  <h3 className="font-bold text-stone-800 uppercase">Our Mission</h3>
                   <p className="text-sm text-stone-500 mt-1">
                     To reconnect skincare with earth's natural remedies through
                     ethical sourcing and traditional wisdom.
                   </p>
                 </div>
-                <div className="flex-1 border-t border-amber-200 pt-4 shadow-xl p-6 rounded-xl">
-                  <h3 className="font-extrabold text-stone-800">Our Promise</h3>
+                <div className="flex-1 border-t border-amber-200 pt-4 shadow-xl p-6 rounded-2xl">
+                  <h3 className="font-bold text-stone-800 uppercase">Our Promise</h3>
                   <p className="text-sm text-stone-500 mt-1">
                     100% natural formulations, cruelty-free practices, and
                     premium quality packaging.
