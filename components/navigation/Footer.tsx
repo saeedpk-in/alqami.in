@@ -31,7 +31,7 @@ const Footer = () => {
         { name: "Terms of Service", href: "/terms-of-service" },
         { name: "Privacy Policy", href: "/privacy-policy" },
         { name: "Refund Policy", href: "/return-policy" },
-        { name: "Shipping Policy", href: "/shipping-policy" },
+        { name: "Disclaimer", href: "/disclaimer" },
       ],
     },
   ];
@@ -76,7 +76,7 @@ const Footer = () => {
                   <li key={link.name}>
                     <Link
                       href={link.href}
-                      className="text-sm text-black  hover:text-white transition-colors"
+                      className="text-sm text-black  hover:text-gray-800 transition-colors"
                     >
                       {link.name}
                     </Link>

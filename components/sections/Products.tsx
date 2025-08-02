@@ -169,12 +169,16 @@ export default function ProductBento() {
           {/* Waiting List - Middle Right */}
           <div className="md:col-span-3 bg-white p-6 rounded-3xl border border-stone-200/50">
             <div className="flex flex-col justify-around h-full">
-              <h2 className="text-2xl md:text-4xl tracking-tighter">Multani Mitti</h2>
+              <h2 className="text-2xl md:text-4xl tracking-tighter">
+                Multani Mitti
+              </h2>
               <p className="text-stone-600 mb-4">
-                Experience the purest form of Multani Mitti, crafted for tan removal ,deep cleansing, oil control, and radiant skin. Limited stock available—secure yours today!
+                Experience the purest form of Multani Mitti, crafted for tan
+                removal ,deep cleansing, oil control, and radiant skin. Limited
+                stock available—secure yours today!
               </p>
               <Button className="w-full bg-emerald-900/90 hover:bg-emerald-900/80 rounded-full py-6 text-sm text-emerald-50">
-                Order Now before it runs out
+                <Link href={"/products"}>Order Now before it runs out</Link>
               </Button>
             </div>
           </div>

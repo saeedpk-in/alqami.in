@@ -1,96 +1,49 @@
-// RefundPolicy.js
-export default function RefundPolicy() {
+import React from 'react';
+
+const ReturnPolicyPage = () => {
   return (
-    <div className="min-h-screen bg-emerald-50 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto bg-white shadow-sm rounded-xl overflow-hidden">
-        {/* Header */}
-        <div className="bg-emerald-800 text-white px-6 py-8 sm:px-10 sm:py-12">
-          <h1 className="text-3xl sm:text-4xl font-bold">Refund and Cancellation Policy</h1>
-          <p className="mt-2 text-emerald-200">Effective Date: July 11, 2025</p>
-        </div>
-
-        {/* Content */}
-        <div className="p-6 sm:p-10 space-y-8">
-          <section className="space-y-4">
-            <p className="text-gray-700 leading-relaxed">
-              At Eco Peedika, we strive for customer satisfaction while staying true to our zero-waste principles. Due to the nature of our eco-friendly products, we follow a strict no-return and no-cancellation policy. However, we do offer limited refunds under specific conditions.
-            </p>
-          </section>
-
-          {/* Section 1 */}
-          <section className="space-y-4">
-            <div className="flex items-start">
-              <span className="text-2xl font-bold text-emerald-800 mr-3">1.</span>
-              <div>
-                <h2 className="text-2xl font-bold text-emerald-800">Non-Returnable Products</h2>
-                <p className="text-gray-700 leading-relaxed mt-2">
-                  All products sold by Eco Peedika are non-returnable due to hygiene, sustainability, and perishability concerns. Please read product descriptions carefully before placing an order.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          {/* Section 2 */}
-          <section className="space-y-4">
-            <div className="flex items-start">
-              <span className="text-2xl font-bold text-emerald-800 mr-3">2.</span>
-              <div>
-                <h2 className="text-2xl font-bold text-emerald-800">Refund Eligibility</h2>
-                <p className="text-gray-700 leading-relaxed mt-2">
-                  Refunds are issued only under the following circumstances:
-                </p>
-                <ul className="mt-3 space-y-2 pl-5 list-disc text-gray-700">
-                  <li>Incorrect item received</li>
-                  <li>Product damaged during transit (with valid photo proof)</li>
-                  <li>Duplicate or failed payment</li>
-                </ul>
-                <p className="text-gray-700 leading-relaxed mt-3">
-                  Requests must be made within 3 days of delivery. Claims made beyond this window will not be considered.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          {/* Section 3 */}
-          <section className="space-y-4">
-            <div className="flex items-start">
-              <span className="text-2xl font-bold text-emerald-800 mr-3">3.</span>
-              <div>
-                <h2 className="text-2xl font-bold text-emerald-800">Refund Process</h2>
-                <p className="text-gray-700 leading-relaxed mt-2">
-                  If approved, the refund will be credited to your original payment method within 5–7 business days. Refunds are handled through Razorpay and subject to their processing times.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          {/* Section 4 */}
-          <section className="space-y-4">
-            <div className="flex items-start">
-              <span className="text-2xl font-bold text-emerald-800 mr-3">4.</span>
-              <div>
-                <h2 className="text-2xl font-bold text-emerald-800">No Cancellations</h2>
-                <p className="text-gray-700 leading-relaxed mt-2">
-                  Orders cannot be cancelled once placed, as we begin fulfillment immediately. Please review your order carefully before checkout.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          {/* Section 5 */}
-          <section className="space-y-4">
-            <div className="flex items-start">
-              <span className="text-2xl font-bold text-emerald-800 mr-3">5.</span>
-              <div>
-                <h2 className="text-2xl font-bold text-emerald-800">Contact for Refunds</h2>
-                <p className="text-gray-700 leading-relaxed mt-2">
-                  For refund queries, please contact eco.peedika.in@gmail.com with your order ID and issue details.
-                </p>
-              </div>
-            </div>
-          </section>
-        </div>
+    <div className="container mx-auto px-4 py-8 max-w-4xl">
+      <h1 className="text-3xl font-bold text-gray-800 mb-6">Return & Refund Policy</h1>
+      
+      <div className="bg-white p-6 rounded-lg shadow-md">
+        <h2 className="text-xl font-semibold text-gray-700 mb-4">General Policy</h2>
+        <p className="text-gray-600 mb-4">
+          Due to hygiene and product safety, we do not accept returns once the package is opened or used.
+        </p>
+        
+        <h2 className="text-xl font-semibold text-gray-700 mb-4">Eligible Cases</h2>
+        <p className="text-gray-600 mb-4">
+          However, if you receive a product that is:
+        </p>
+        <ul className="list-disc pl-5 space-y-2 text-gray-600 mb-4">
+          <li>Damaged during shipping</li>
+          <li>Incorrect or not as described</li>
+        </ul>
+        
+        <h2 className="text-xl font-semibold text-gray-700 mb-4">Resolution Process</h2>
+        <p className="text-gray-600 mb-4">
+          Please contact us within 48 hours of delivery with:
+        </p>
+        <ul className="list-disc pl-5 space-y-2 text-gray-600 mb-4">
+          <li>Clear images of the product</li>
+          <li>Order details and invoice</li>
+        </ul>
+        
+        <p className="text-gray-600 mb-4">
+          After verification, we may offer:
+        </p>
+        <ul className="list-disc pl-5 space-y-2 text-gray-600 mb-4">
+          <li>Replacement of the same item</li>
+          <li>Refund to the original payment method</li>
+          <li>Store credit, based on your preference</li>
+        </ul>
+        
+        <p className="text-gray-600">
+          Note: Returned items must be unused, sealed, and sent back within 7 working days.
+        </p>
       </div>
     </div>
   );
-}
+};
+
+export default ReturnPolicyPage;
