@@ -374,7 +374,7 @@ export default function Page() {
 
           <Card className="px-5 py-4 gap-1 col-span-2 bg-emerald-700/10 shadow-none font-normal">
             <h4 className="">Description</h4>
-            <p className="text-primary/70 text-sm sm:text-base">
+            <p className="text-primary/70 text-sm sm:text-base whitespace-pre-line">
               {description.length > 140 ? (
                 <>
                   {description.slice(0, 140)}

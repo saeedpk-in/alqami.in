@@ -2,7 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
 // import { IconBrandThreads , IconBrandX , IconBrandLinkedin,IconBrandInstagram } from '@tabler/icons-react';
 
 const Footer = () => {
@@ -10,19 +10,19 @@ const Footer = () => {
     {
       title: "Pages",
       links: [
+        { name: "Home", href: "/" },
         { name: "Products", href: "/products" },
         { name: "Orders", href: "/orders" },
         { name: "Cart", href: "/cart" },
-        { name: "About", href: "/about" },
       ],
     },
     {
       title: "Support",
       links: [
-        { name: "Contact Us", href: "/contact" },
+        { name: "Contact Us", href: "/#contact" },
         { name: "Shipping Info", href: "/shipping-policy" },
         { name: "Returns & Exchanges", href: "/return-policy" },
-        { name: "About Us", href: "/about" },
+        { name: "About Us", href: "/#brand-story" },
       ],
     },
     {
@@ -37,10 +37,8 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: <Instagram size={18} />, href: "https://www.instagram.com/alqami.in" },
-    { icon: <Facebook size={18} />, href: "https://www.threads.com/webcodge" },
-    { icon: <Twitter size={18} />, href: "https://x.com/webcodge" },
-    { icon: <Linkedin size={18} />, href: "https://www.linkedin.com/in/" },
+    { icon: <Instagram  size={18} />, href: "https://www.instagram.com/alqami.in" },
+    { icon: <Youtube  size={18} />, href: "https://www.youtube.com/@alqami_india" },
   ];
 
   return (
@@ -121,7 +119,7 @@ const Footer = () => {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-black  hover:text-white transition-colors"
+                  className="text-black  hover:text-gray-800 transition-colors"
                 >
                   {social.icon}
                 </Link>
@@ -129,10 +127,10 @@ const Footer = () => {
             </div>
             
             <div className="hidden md:flex items-center gap-4">
-              <Link href="/terms-of-service" className="text-xs text-black  hover:text-white transition-colors">
+              <Link href="/terms-of-service" className="text-xs text-black  hover:text-gray-800 transition-colors">
                 Terms
               </Link>
-              <Link href="/privacy-policy" className="text-xs text-black  hover:text-white transition-colors">
+              <Link href="/privacy-policy" className="text-xs text-black  hover:text-gray-800 transition-colors">
                 Privacy
               </Link>
             </div>

@@ -23,7 +23,17 @@ const ProductsSection = async ({
     priceSort: params.priceSort as string,
     searchQuery: params.search as string,
   });
-  if (products.length === 1) {
+  if (products.length === 0) {
+    return (
+      <div className="flex flex-col items-center justify-center mt-5 p-12 bg-neutral-100 rounded-3xl">
+        <SearchX className="w-12 h-12 text-neutral-600 mb-4" />
+        <h3 className="text-lg font-light mb-2">No Products Found</h3>
+        <p className="text-neutral-500 mb-4">
+          We couldn't find any products for {params.category || params.search}
+        </p>
+      </div>
+    );
+  } else if (products.length === 1) {
     return (
       <div className="h-full  grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 py-10">
         {products.map((product: IProduct) => (
@@ -37,22 +47,11 @@ const ProductsSection = async ({
         currentPage={currentPage as number}
         totalPages={totalPages as number}
       >
-        {products.length === 0 ? (
-          <div className="flex flex-col items-center justify-center mt-5 p-12 bg-neutral-100 rounded-3xl">
-            <SearchX className="w-12 h-12 text-neutral-600 mb-4" />
-            <h3 className="text-lg font-light mb-2">No Products Found</h3>
-            <p className="text-neutral-500 mb-4">
-              We couldn't find any products for{" "}
-              {params.category || params.search}
-            </p>
-          </div>
-        ) : (
-          <div className="h-full  grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 py-10">
-            {products.map((product: IProduct) => (
-              <ProductCard key={product._id} product={product} />
-            ))}
-          </div>
-        )}
+        <div className="h-full  grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 py-10">
+          {products.map((product: IProduct) => (
+            <ProductCard key={product._id} product={product} />
+          ))}
+        </div>
       </Filters>
     );
   }

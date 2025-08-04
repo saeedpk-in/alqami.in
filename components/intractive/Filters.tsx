@@ -21,7 +21,7 @@ import {
 import { Button } from "../ui/button";
 import { X } from "lucide-react";
 
-const categories = ["essential-kit"];
+const categories = ["Face care", "Hair care", "Body care"];
 
 function Filters({
   children,
@@ -96,11 +96,7 @@ function Filters({
               <SelectGroup>
                 {categories.map((cat) => (
                   <SelectItem key={cat} value={cat}>
-                    {cat === "men"
-                      ? "For Him"
-                      : cat === "women"
-                      ? "For Her"
-                      : cat.slice(0, 1).toUpperCase() + cat.slice(1)}
+                    {cat.charAt(0).toUpperCase() + cat.slice(1)}
                   </SelectItem>
                 ))}
               </SelectGroup>
