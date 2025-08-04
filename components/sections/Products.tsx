@@ -177,7 +177,7 @@ export default function ProductBento() {
                 removal ,deep cleansing, oil control, and radiant skin. Limited
                 stock available—secure yours today!
               </p>
-              <Button className="w-full bg-emerald-900/90 hover:bg-emerald-900/80 rounded-full py-6 text-sm text-emerald-50">
+              <Button className="w-full bg-emerald-900/90 hover:bg-emerald-900/80 rounded-full py-6 text-sm text-emerald-50" asChild>
                 <Link href={"/products"}>Order Now before it runs out</Link>
               </Button>
             </div>
